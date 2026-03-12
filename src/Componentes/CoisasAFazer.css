@@ -1,0 +1,17 @@
+#container{
+    background-color: white;
+    padding-left: 10px;
+    padding-top: 5px
+}
+
+#container ul{
+    padding: 0px;
+    margin: 0px;
+    border: 0px
+}
+
+#container li{
+    background-color: #cfcfcf;
+    
+    list-style-type: none;
+}
