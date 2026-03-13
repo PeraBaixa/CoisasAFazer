@@ -1,17 +1,49 @@
 #container{
+    max-width: 400px;
     background-color: white;
-    padding-left: 10px;
-    padding-top: 5px
+    margin: 40px auto;
+    padding: 10px 10px 5px 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 3px;
+    text-align: center
+}
+
+#container div{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+
+#container div input{
+    border-radius: 10px;
+    border: 1px solid;
+    font-size: 16px;
+    text-align: center
+}
+
+#container div button{
+    background: #00a0f0;
+    border: none;
+    color: white;
+}
+
+#container div button:hover{
+    background: #0080f0
 }
 
 #container ul{
-    padding: 0px;
-    margin: 0px;
-    border: 0px
+    list-style: none;
+    padding: 0px
 }
 
-#container li{
+#container ul li{
     background-color: #cfcfcf;
-    
-    list-style-type: none;
+    color: black;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+#container ul li:hover{
+    background-color: #aFaFaF;
 }

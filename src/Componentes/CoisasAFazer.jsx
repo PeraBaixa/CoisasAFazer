@@ -2,11 +2,12 @@ import {useState} from "react"
 import "./CoisasAFazer.css"
 
 export const CoisasAFazer = () => {
+    const [tarefas, mudaLista] = useState([])
 
     const addItens = () => {
-        let topico = document.createElement("li")
-        topico.innerHTML = document.getElementsByTagName("input")[0].value
-        document.getElementsByTagName("ul")[0].append(topico)
+        let topico = document.getElementsByTagName("input")[0].value
+        mudaLista([...tarefas, topico])
+        document.getElementsByTagName("input")[0].value = ""
     }
 
     return (
@@ -20,6 +21,9 @@ export const CoisasAFazer = () => {
                 <button onClick={addItens}>Adicionar</button>
             </div>
             <ul>
+                {tarefas.map((item, index) => (
+                    <li key={index}>{item}</li>
+                ))}
             </ul>
         </div>
     )
